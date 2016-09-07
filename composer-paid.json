@@ -1,0 +1,80 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "deliciousbrains/wp-migrate-db-pro",
+        "type": "wordpress-plugin",
+        "version": "1.6.1",
+        "dist": {
+          "type": "zip",
+          "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-latest.zip?licence_key=[LICENCE_KEY]&site_url=composer.dev"
+        },
+        "require": {
+          "composer/installers": "v1.0.7"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "deliciousbrains/wp-migrate-db-pro-cli",
+        "type": "wordpress-plugin",
+        "version": "1.2.5",
+        "dist": {
+          "type": "zip",
+          "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-cli-latest.zip?licence_key=[LICENCE_KEY]&site_url=composer.dev"
+        },
+        "require": {
+          "composer/installers": "v1.0.7"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "deliciousbrains/wp-migrate-db-pro-media-files",
+        "type": "wordpress-plugin",
+        "version": "1.4.5",
+        "dist": {
+          "type": "zip",
+          "url": "https://deliciousbrains.com/dl/wp-migrate-db-pro-media-files-latest.zip?licence_key=[LICENCE_KEY]&site_url=composer.dev"
+        },
+        "require": {
+          "composer/installers": "v1.0.7"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package":
+      {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.4.2",
+        "type": "wordpress-plugin",
+        "dist":
+        {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=[LICENCE_KEY]"
+        }
+      }
+    }
+  ],
+  "config": {
+    "vendor-dir": "wp-content/mu-plugins",
+    "bin-dir": "bin"
+  },
+  "require": {
+    "wpackagist-plugin/contact-form-7": "4.5",
+    "wpackagist-plugin/kraken-image-optimizer":"2.5.1",
+    "wpackagist-plugin/opcache": "0.3.1",
+    "deliciousbrains/wp-migrate-db-pro": "*",
+    "deliciousbrains/wp-migrate-db-pro-cli": "*",
+    "deliciousbrains/wp-migrate-db-pro-media-files": "*",
+    "advanced-custom-fields/advanced-custom-fields-pro": "*"
+  }
+}

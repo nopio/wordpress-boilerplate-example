@@ -1,0 +1,26 @@
+# system files
+.DS_Store
+Thumbs.db
+.#*.*
+
+# generated files
+.sass-cache
+node_modules
+
+# composer and wordpress files
+/wp-config.php
+/wp-content/uploads/*
+/wp-content/cache/*
+/wp-content/mu-plugins
+/wp-content/mu-plugins/*
+/wp-content/plugins/*
+!/wp-content/plugins/comet-cache-pro
+
+# Theme ignores
+/wp-content/themes/nopio_master/js
+/wp-content/themes/nopio_master/css
+
+/.idea/*
+/*.sublime-project
+/*.sublime-workspace
+/sftp-config.json

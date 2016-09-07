@@ -1,0 +1,417 @@
+//
+// 3.0 -Normalize
+// --------------------------------------------------
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic,600,600italic,500,500italic&subset=latin,latin-ext);
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  quotes: none;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  color: $default;
+  font-family: 'Raleway', 'calibri', 'helvetica', 'arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  line-height: 1.48;
+  color: $default;
+}
+
+h1 {
+  font-size: 26px;
+  /*  font-size: 2.6rem;*/
+}
+
+h2{
+  font-size: 24px;
+  /*  font-size: 2.4rem;*/
+}
+
+h3 {
+  font-size: 22px;
+  /*  font-size: 2.2rem;*/
+}
+h4 {
+  font-size: 20px;
+  /*  font-size: 2rem;*/
+}
+h5,
+h6 {
+  font-size: 16px;
+  /*  font-size: 1.6rem;*/
+}
+
+a {
+  color: $default;
+  text-decoration: none;
+  @include transition(.2s, linear);
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+a img {
+  border: 0;
+}
+
+p {
+  margin-bottom: 1.6em;
+}
+
+b,
+strong {
+  font-weight: 400;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  border-left: 4px solid #707070;
+  border-left: 4px solid rgba(51, 51, 51, 0.7);
+  color: #707070;
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.6667;
+  margin-bottom: 1.6667em;
+  padding-left: 0.7778em;
+}
+
+blockquote p {
+  margin-bottom: 1.6667em;
+}
+
+blockquote > p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote cite,
+blockquote small {
+  color: $default;
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-family: 'Raleway', 'calibri', 'helvetica', 'arial', sans-serif;
+  line-height: 1.6;
+}
+
+blockquote em,
+blockquote i,
+blockquote cite {
+  font-style: normal;
+}
+
+blockquote strong,
+blockquote b {
+  font-weight: 400;
+}
+
+address {
+  font-style: italic;
+  margin: 0 0 1.6em;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre {
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.01);
+  border: 1px solid #eaeaea;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  line-height: 1.2;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 0.8em;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted #eaeaea;
+  border-bottom: 1px dotted rgba(51, 51, 51, 0.1);
+  cursor: help;
+}
+
+mark,
+ins {
+  background-color: #fff9c0;
+  text-decoration: none;
+}
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  bottom: 1ex;
+}
+
+sub {
+  top: .5ex;
+}
+
+small {
+  font-size: 75%;
+}
+
+big {
+  font-size: 125%;
+}
+.center {
+  text-align: center;
+}
+.highlight {
+  color: orange;
+}
+
+/**
+ * 4.0 Elements
+ */
+
+hr {
+  background-color: #eaeaea;
+  background-color: rgba(51, 51, 51, 0.1);
+  border: 0;
+  height: 1px;
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0 0 1.6em 0;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+dl {
+  margin-bottom: 1.6em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1.6em;
+}
+
+table,
+th,
+td {
+  border: 1px solid #eaeaea;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 1px 0 0 1px;
+  margin: 0 0 1.6em;
+  table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+th {
+  border-width: 0 1px 1px 0;
+  font-weight: 700;
+}
+
+td {
+  border-width: 0 1px 1px 0;
+}
+
+th, td {
+  padding: 0.4em;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+figure {
+  margin: 0;
+}
+
+del {
+  opacity: 0.8;
+}
+
+/* Placeholder text color -- selectors need to be separate to work. */
+
+::-webkit-input-placeholder {
+  color: rgba(51, 51, 51, 0.7);
+  font-family: 'Raleway', 'calibri', 'helvetica', 'arial', sans-serif;
+}
+
+:-moz-placeholder {
+  color: rgba(51, 51, 51, 0.7);
+  font-family: 'Raleway', 'calibri', 'helvetica', 'arial', sans-serif;
+}
+
+::-moz-placeholder {
+  color: rgba(51, 51, 51, 0.7);
+  font-family: 'Raleway', 'calibri', 'helvetica', 'arial', sans-serif;
+  opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */
+}
+
+:-ms-input-placeholder {
+  color: rgba(51, 51, 51, 0.7);
+  font-family: 'Raleway', 'calibri', 'helvetica', 'arial', sans-serif;
+}
+
+
+/**
+ * 14.0 Media
+ */
+
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley {
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+audio,
+canvas {
+  display: inline-block;
+}
+
+embed,
+iframe,
+object,
+video {
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+p > embed,
+p > iframe,
+p > object,
+p > video {
+  margin-bottom: 0;
+}
+

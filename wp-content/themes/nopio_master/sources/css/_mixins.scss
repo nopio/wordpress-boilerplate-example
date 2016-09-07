@@ -1,0 +1,30 @@
+//
+// 6.0 - Mixins
+// --------------------------------------------------
+
+@mixin radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin translate($translateX, $translateY) {
+  -webkit-transform: translate($translateX, $translateY);
+  -moz-transform: translate($translateX, $translateY);
+  -ms-transform: translate($translateX, $translateY);
+  transform: translate($translateX, $translateY);
+}
+
+@mixin transition($duration, $effect) {
+  -webkit-transition:all $duration $effect;
+  -moz-transition: all $duration $effect;
+  -o-transition: all $duration $effect;
+  -ms-transition: all $duration $effect;
+  transition: all $duration $effect;
+}
+
+
+
+
+

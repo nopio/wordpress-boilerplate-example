@@ -1,0 +1,20 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "config": {
+    "vendor-dir": "wp-content/mu-plugins",
+    "bin-dir": "bin"
+  },
+  "require": {
+    "wpackagist-plugin/advanced-custom-fields": "4.4.8",
+    "wpackagist-plugin/contact-form-7": "4.5",
+    "wpackagist-plugin/comet-cache": "160706",
+    "wpackagist-plugin/kraken-image-optimizer":"2.6.2",
+    "wpackagist-plugin/opcache": "0.3.1",
+    "wpackagist-plugin/wp-migrate-db": "0.8"
+  }
+}
